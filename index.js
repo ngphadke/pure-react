@@ -1,9 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// // SFC HelloWorld in JSX
+// function HelloWorld(){
+//     return(
+//         <div>Hello World!</div>
+//     );
+// }
+
+// HelloWorld in Plain JS
 function HelloWorld(){
-    return(
-        <div>Hello World!</div>
+    return React.createElement(
+        'div',
+        {},
+        'Hello World!'
     );
 }
 
