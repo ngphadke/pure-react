@@ -8,13 +8,34 @@ import ReactDOM from 'react-dom';
 //     );
 // }
 
-// HelloWorld in Plain JS
-function HelloWorld(){
-    return React.createElement(
-        'div',
-        {},
-        'Hello World!'
+// // HelloWorld in Plain JS
+// function HelloWorld(){
+//     return React.createElement(
+//         'div',
+//         {},
+//         'Hello World!'
+//     );
+// }
+
+function Hello(){
+    return (
+        <span>Hello</span>
     );
+}
+
+function World() {
+    return(
+        <span>World!</span>
+    );
+}
+
+function HelloWorld() {
+    return(
+        <div>
+            <Hello /> <World />
+        </div>
+        
+    )
 }
 
 ReactDOM.render(
